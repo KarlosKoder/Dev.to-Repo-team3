@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/1f42bf96bf.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/4fe1382028.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/dev-badge.svg" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Dev.to - Write a Post</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row d-flex justify-content-end justify-content-md-between">
+      <div class="col-12 col-md-8 col-lg-10">
+        <div class="navbar navbar-light d-flex justify-content-end justify-content-md-between">
+          <a class="navbar-brand d-none d-md-block" href="#">
+            <img src="/images/dev-badge.svg" width="30" height="30" class="d-inline-block align-top" alt=""
+              loading="lazy">
+            Write a post
+          </a>
+          <div class="d-flex justify-content-end btn-group" role="group">
+            <button type="buttonav" class="btn btn-edit"> Edit </button>
+            <button type="buttonav" class="btn btn-preview"> Preview </button>
+            <a href="/index.html" class="btn btn-exit">X</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--**********************************************************************************************************************************************************************-->
+  <!--***********AQUI INICIA NAV junto con INPUT ***************************************************************************************************-->
+  <!--**********************************************************************************************************************************************************************-->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="container form2">
+        <div class="row">
+          <!-- ****************************************  aqui empieza el input ***************************************************************-->
+          <div class="border border-secundary rounded bg-light mb-4 col-12 col-md-8 col-lg-10 ">
+            <div class="list-form-group form-view ml-4">
+              <form>
+                <div>
+                  <button type="button" class="ibtn btn btn-outline-secondary mt-5">Add a cover image</button>
+                </div>
+                <div class="form-group">
+                  <label for=""></label>
+                  <textarea rows="1" class="itexta form-control border-0" ref="Default" name="title"
+                    placeholder="New post title here...""></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for=""></label>
+                  <textarea rows="1" class="input-whos form-control border-0" name="username"
+                    placeholder="Who's writting?"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for=""></label>
+                  <input type="text" class="itag form-control border-0" name="tags" placeholder="Add up to 4 tags...">
+                </div>
+                <div class="form-group bg-light">
+                  <label for=""></label>
+                  <input type="text" class="iURL form-control border-0" name="URL"
+                    placeholder="Add an image URL">
+                </div>
+
+                <div class="input-date mb-5">
+                  <input type="date" class="idate form-control border-0" name="datetime">
+                </div>
+
+                <div class="form-group">
+                  <label for=""></label>
+                  <textarea rows="5" class="icontent form-control border-0" name="content"
+                    placeholder="Write your post content here..."></textarea>
+                </div>
+
+              </form>
+            </div>
+            <!-- ****************************************  aqui empieza el preview ***************************************************************-->
+
+            <!-- ****************************************  aqui empieza el preview ***************************************************************-->
+            <div class="preview">
+              <img src="" alt="">
+              <h1></h1>
+              <p class="inputp-whos p-user"></p>
+              <p class="idatep p-date"></p>
+              <p class="itagp p-tags"></p>
+              <p class="icontentp p-post"></p>
+            </div>
+
+            <!-- ****************************************aqui termina el apartado de preview y edit***************************************************************-->
+
+            <!-- ****************************************aqui termina el apartado de preview y edit***************************************************************-->
+          </div>
+        </div>
+      </div>
+      <!-- ****************************************  aqui empieza FOOTER ***************************************************************-->
+      <div class="container">
+        <div class="row">
+          <div class="d-flex col-12 col-md-8 col-lg-10 ">
+            <button type="button"
+              class="boton-morado btn btn-primary shadow-none font-weight-bold mx-2 text-nowrap d-none d-md-block btn-publish">Publish
+            </button>
+            <button type="button" class="botongris botonsave btn btn-outline-secondary ">Save Draft</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ****************************************  aqui van los scripts de bootstrap y js***************************************************************-->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+  <script src="js/write-vero.js"></script>
+  <script src="js/write-carlos.js"></script>
+</body>
+
+</html>

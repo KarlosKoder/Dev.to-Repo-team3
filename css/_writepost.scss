@@ -1,0 +1,93 @@
+
+
+
+ .input-whos {
+   
+    margin-top: -30px;
+    box-sizing:border-box;
+    box-shadow: none;
+    outline:none;
+    font-size: 30px;
+    font-weight: 600;
+   
+ }
+
+ .itexta {
+
+
+    font-weight: 800;
+    box-sizing:border-box;
+    box-shadow: none;
+    outline:none;
+    font-size: 60px;
+   
+ }
+
+ .itag {
+    margin-top: -30px;
+    font-family: $ff-monospace;
+    box-sizing:border-box;
+    box-shadow: none;
+    outline:none;
+    font-size: 18px;
+
+ }
+
+ .iURL {
+    margin-top: -30px;
+    font-family: $ff-monospace;
+    box-sizing:border-box;
+    box-shadow: none;
+    outline:none;
+    font-size: 15px;
+
+ }
+
+ .icontent {
+
+    margin-top: -30px;
+    font-weight: 600;
+    box-sizing:border-box;
+    box-shadow: none;
+    outline:none;
+    font-size: 30px;
+   
+ }
+
+ .idate {
+     width:170px;
+
+ }
+
+
+ nav .btnnav {
+    .btn-nav1{
+      padding-left:90px;
+    }
+    
+    .navbarmargen{
+      margin-left: 40px;
+    }
+   
+ }
+
+
+
+ .navbarmargen{
+   margin-left: 40px;
+ }
+
+
+
+
+ 
+
+
+ @media (max-width: 320px) {
+   .itexta,.input-whos,.iURL,.icontent,.idate,.itag{
+     font-size: large;
+   }
+   .iURL,.itag,.idate{
+      font-size: medium;
+    }
+}
